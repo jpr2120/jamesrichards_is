@@ -1,0 +1,57 @@
+$primary-text-color:#333;
+$base-purple: rgb(58,18,108); 
+$bright-purple: rgb(116,36,216);
+$link-blue:rgb(51,122,183);
+
+.centered{
+	text-align:center;
+}
+
+#banner{
+	height:3px;
+	background:$base-purple;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+}
+
+#profile-pic{
+	margin:35px auto 0px;
+	width:150px;
+	display:block;
+}
+
+#main-content{
+	margin:10px auto;
+	max-width:485px;
+	font-size:1.55rem;
+	line-height:1.65;
+}
+
+#main-content a{
+	text-decoration:none;
+	color:$link-blue;
+}
+
+#main-content a:hover{
+	text-decoration:underline;
+}
+
+#main-content h1{
+	font-size:4.5rem;
+	font-weight:600;
+	margin-bottom:20px;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+	#main-content h1{
+		font-size:6.25rem;
+		margin-bottom:25px;
+	}
+	#profile-pic{
+		margin:55px auto 0px;
+		margin-bottom:5px;
+	}
+}

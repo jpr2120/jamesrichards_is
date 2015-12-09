@@ -1,0 +1,60 @@
+<div id="banner"></div>
+<div class="container">
+	<div class="row">
+		<div class="twelve columns">
+		 	<img id="profile-pic" alt="James Richards" src="/james-richards-cartoon.png"/>
+		</div>
+	</div>
+	<div class="twelve columns">
+		<div id="main-content">
+			<h1 class="centered">Hi, I'm James.</h1>
+			<p>I'm the Co-founder & CEO of
+			<%=link_to("Teleborder", "https://www.teleborder.com", :target => "_blank", :id => "teleborder-site-link")%>. Teleborder helps companies hire, manage, and retain international employees. Our investors include Khosla Ventures, Recruit, IDG, and Y Combinator (S13). You can read more about us 
+			<%=link_to("here", "http://www.forbes.com/sites/adrianagardella/2015/04/22/a-tech-company-seeks-to-ease-employers-immigration-hassles/", :target => "_blank", :id => "first-press-link")%>,
+			<%=link_to("here", "https://pando.com/2014/07/14/got-visa-problems-teleborder-raises-a-khosla-ventures-led-seed-round-to-solve-employee-immigration-issues/", :target => "_blank", :id => "second-press-link")%>, and
+			<%=link_to("here", "http://www.bizjournals.com/sanjose/news/2013/08/21/top-startup-picks-from-y-combinator.html", :target => "_blank", :id => "third-press-link")%>.</p>
+			<p>I was born in Australia, grew up in Indonesia, and went to college in London and New York. Now I live in San Francisco.</p>
+			<p>Before Teleborder I practiced corporate law at Davis Polk. I graduated from Columbia Law School and passed the New York Bar at age 20. In 2015 I was named to the
+			<%=link_to("Forbes 30 Under 30", "http://www.forbes.com/sites/danielfisher/2015/01/05/white-house-officials-legal-entrepreneurs-dominate-30-under-30-law-and-policy-list/", :target => "_blank", :id => "forbes-3030-link")%> for Law and Policy.</p>
+			<p class="centered" style="background:rgb(250,250,250); padding:2px 0px;">
+				<%=mail_to "james@teleborder.com", "Email", :target => "_blank", :id => "email-link"%>
+				|
+				<%=link_to("LinkedIn", "http://www.linkedin.com/in/jpr2120", :target => "_blank", :id => "linkedin-link")%>
+			</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+	analytics.identify();
+
+  var link = document.getElementById('teleborder-site-link');
+  analytics.trackLink(link, 'Clicked Teleborder Site Link', {
+  });  
+
+  var link = document.getElementById('first-press-link');
+  analytics.trackLink(link, 'Clicked First Press Link', {
+  });  
+
+  var link = document.getElementById('second-press-link');
+  analytics.trackLink(link, 'Clicked Second Press Link', {
+  });  
+
+  var link = document.getElementById('third-press-link');
+  analytics.trackLink(link, 'Clicked Third Press Link', {
+  });  
+
+  var link = document.getElementById('forbes-3030-link');
+  analytics.trackLink(link, 'Clicked Forbes 3030 Link', {
+  });  
+
+  var link = document.getElementById('email-link');
+  analytics.trackLink(link, 'Clicked Email Link', {
+  });  
+
+  var link = document.getElementById('linkedin-link');
+  analytics.trackLink(link, 'Clicked LinkedIn Link', {
+  });  
+
+</script>
